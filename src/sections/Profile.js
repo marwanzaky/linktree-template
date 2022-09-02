@@ -37,19 +37,21 @@ function Button(props) {
 function Profile() {
     return (
         <section className="profile">
-            <div className="mb-5">
-                <div className="profile-picture"><img src={profile.picture} alt={profile.name}></img></div>
-                <h1 className="profile-fullname">
-                    {profile.fullname}
-                    <IonIcon className='profile-fullname-check_mark' src={checkmarkCircleSharp} />
-                </h1>
-            </div>
+            <div className='m-auto w-full sm:w-[300px]'>
+                <div className="mb-5">
+                    <div className="profile-picture"><img src={profile.picture} alt={profile.name}></img></div>
+                    <h1 className="profile-fullname">
+                        {profile.fullname}
+                        <IonIcon className='profile-fullname-check_mark' src={checkmarkCircleSharp} />
+                    </h1>
+                </div>
 
-            <h1 className="profile-about">About</h1>
-            <div className="profile-bio">{profile.bio}</div>
+                <h1 className="profile-about">About</h1>
+                <div className="profile-bio">{profile.bio}</div>
 
-            <div className="social_media flex flex-col w-full sm:w-[300px]">
-                {profile.socialMedia.map((el, i) => <Button name={el.name} url={el.url} index={i} />)}
+                <div className="social_media flex flex-col">
+                    {profile.socialMedia.map((el, i) => <Button name={el.name} url={el.url} index={i} />)}
+                </div>
             </div>
         </section>
     );
