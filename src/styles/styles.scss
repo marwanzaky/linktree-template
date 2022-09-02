@@ -1,0 +1,68 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
+
+$color1: #F4F1DE;
+$color2: #E07A5F;
+$color3: #3D405B;
+
+$border: solid 2px black;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: $color1;
+}
+
+section {
+  padding: 30px
+}
+
+/*------- PROFILE -------*/
+.profile {
+  .profile-picture {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+
+    img {
+      border-radius: 50%;
+      border: $border;
+      height: auto;
+      width: 128px;
+    }
+  }
+
+  .profile-fullname {
+    font-weight: bold;
+    text-align: center;
+  }
+
+  .profile-bio {
+    margin-bottom: 30px;
+    text-align: center;
+  }
+
+  .social_media {
+    margin: auto;
+
+    .button {
+      margin-bottom: 15px;
+      padding: 15px 0;
+
+      text-align: center;
+      text-transform: capitalize;
+      font-weight: bold;
+
+      border: $border;
+      background-color: $color2;
+    }
+  }
+}
