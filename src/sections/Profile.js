@@ -34,7 +34,7 @@ function Button(props) {
 function Profile() {
     return (
         <section className="profile">
-            <div className="profile-picture"><img src={profile.picture}></img></div>
+            <div className="profile-picture"><img src={profile.picture} alt={profile.name}></img></div>
             <div className="profile-fullname">{profile.fullname}</div>
             <div className="profile-bio">{profile.bio}</div>
 
