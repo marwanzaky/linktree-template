@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap');
 
 $color1: #F4F1DE;
 $color2: #E07A5F;
@@ -22,7 +22,19 @@ body {
 }
 
 section {
-  padding: 30px
+  padding: 30px;
+}
+
+/*------- HEADER -------*/
+h1 {
+  margin-bottom: 5px;
+  font-size: 120%;
+  font-weight: bold;
+}
+
+/*------- APP -------*/
+.App {
+  padding-top: 50px;
 }
 
 /*------- PROFILE -------*/
@@ -41,20 +53,27 @@ section {
   }
 
   .profile-fullname {
-    font-weight: bold;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .profile-fullname-check_mark {
+      margin-left: 3px;
+      color: #4FB6EC;
+    }
   }
 
   .profile-bio {
     margin-bottom: 30px;
-    text-align: center;
   }
 
   .social_media {
     margin: auto;
 
     .button {
-      margin-bottom: 15px;
+      $box-shadow-offset: 7px;
+
+      margin-bottom: 30px;
       padding: 15px 0;
 
       text-align: center;
@@ -63,6 +82,8 @@ section {
 
       border: $border;
       background-color: $color2;
+
+      box-shadow: black $box-shadow-offset $box-shadow-offset 0;
     }
   }
 }

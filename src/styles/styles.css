@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -17,6 +17,18 @@ section {
   padding: 30px;
 }
 
+/*------- HEADER -------*/
+h1 {
+  margin-bottom: 5px;
+  font-size: 120%;
+  font-weight: bold;
+}
+
+/*------- APP -------*/
+.App {
+  padding-top: 50px;
+}
+
 /*------- PROFILE -------*/
 .profile .profile-picture {
   display: flex;
@@ -30,22 +42,27 @@ section {
   width: 128px;
 }
 .profile .profile-fullname {
-  font-weight: bold;
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.profile .profile-fullname .profile-fullname-check_mark {
+  margin-left: 3px;
+  color: #4FB6EC;
 }
 .profile .profile-bio {
   margin-bottom: 30px;
-  text-align: center;
 }
 .profile .social_media {
   margin: auto;
 }
 .profile .social_media .button {
-  margin-bottom: 15px;
+  margin-bottom: 30px;
   padding: 15px 0;
   text-align: center;
   text-transform: capitalize;
   font-weight: bold;
   border: solid 2px black;
   background-color: #E07A5F;
+  box-shadow: black 7px 7px 0;
 }/*# sourceMappingURL=styles.css.map */
